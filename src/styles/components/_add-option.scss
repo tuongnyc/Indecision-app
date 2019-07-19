@@ -1,0 +1,37 @@
+.add-option-error {
+    color: $off-white;
+    font-style: italic;
+    padding: 0 2.5rem;
+    margin: 1rem 0 0 0;  // top bottom left right;
+}
+
+.add-option {
+    display: flex;   // not to use justify-content;
+    flex-direction: column;  // stack verticle!
+    padding: 1.5rem;   // on all four sides!
+}
+
+.add-option__input {
+    flex-grow: 1;    // grow to take all the available space. 
+        // So, if screen changes, input text also changes.
+    background: $dark-blue;
+    border: none;  // this will set all sides of the input border to none, then readjust the bottom border!
+    border-bottom: .3rem solid darken($dark-blue, 10%);
+    //margin-right: .5rem;
+    margin: 0 0 1.2 0;  // top right bottom left!
+    color: red;
+    padding: .5rem;
+}
+
+// max-width parameter upto 45rem, apply these styles.  for small devices
+// min-width parameter, apply styles anything that is smaller than 45 rem
+@media (min-width: 45rem) {
+ .add-option {
+    flex-direction: row;
+ }
+
+ .add-option__input {
+     margin: 0 1.2 0 0;  // when things stack left to right!
+ }
+
+}

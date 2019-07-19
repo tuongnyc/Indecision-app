@@ -1,0 +1,28 @@
+.widget {
+    background: $light-blue;
+    margin-bottom: 4.8rem;
+}
+
+.widget__title  //widget element selector, use on p tag
+{
+    color: $off-white;
+    margin: 0;
+    padding: 3.8rem;
+    text-align: center;
+    border-bottom: 1px solid lighten($light-blue, 10%);
+}
+
+//widget header
+.widget-header {
+    background: $blue;
+    color: $off-white;
+    padding: .6rem;
+    display: flex;  // flexbox  will distribute left to right!
+    justify-content: space-between;  // all the left over space will be distributed between the two.
+                                // or space-around, will distribute the space around the element.
+}
+
+// element selector
+.widget-header__title {
+    margin: 0;
+}

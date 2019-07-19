@@ -1,0 +1,29 @@
+// This is partial.
+.header {
+    background: $off-black;
+    //margin-bottom: 4.8rem;  // 48 px space below the heading
+    margin-bottom: 1.2rem;  // this is for smaller device!
+    padding: $m-size 0; //1.6(16) px space above and below, and 0 on left and right!
+    color: white;
+}
+
+// class selector
+.header__title {   //BEM - block element modifier
+    font-size: 3.2rem; // 32 px
+    margin: 0;  // all four size
+    color: purple;
+}
+
+.header__subtitle {
+    //color: red;
+    color: $off-white;
+    font-size: $m-size;  // 16px
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (min-width: 45rem) {
+    .header{
+        margin-bottom: 4.8rem;
+    }
+}

@@ -1,0 +1,15 @@
+.option {  // house the option and the remove button
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 2.2rem;  //1.2 is top and bottom; 2.2 is left and right! spaces
+    border-bottom: 1px solid lighten($light-blue, 10%);
+}
+
+.option__text
+{
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0;
+    word-break: break-all;
+}
