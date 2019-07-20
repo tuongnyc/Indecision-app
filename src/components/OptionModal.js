@@ -3,6 +3,7 @@ import Modal from 'react-modal';
 
 // stateless component
 
+
 const OptionModal = (props) => {
     // required isOpen and contentLabel, isOpen={false} hide the modal
     // !!(double exclamation) will convert string to true and !!undefined to false
@@ -16,9 +17,9 @@ const OptionModal = (props) => {
         >
             <h3 className="modal__title">Selected Option</h3>
             {props.selectedOption && <p className="modal__body">{props.selectedOption}</p>}
-            <button className="button" onClick={props.handleClearSelectOption}>Ok</button>
+            <button className="button" onClick={props.handleClearSelectedOption}>Ok</button>
         </Modal>
     );
-}
+} 
 
 export default OptionModal;
